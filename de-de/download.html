@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SpecIFicator</title>
+    <link rel="icon" type="image/x-icon" href="../images/SpecIFicator_Icon.ico">
+    <link href="../css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div id="headerDiv">
+        <object type="text/html" data="header.html" style="overflow:auto; width: 100%; height: 100%;"></object>
+    </div>
+
+    <div class="wrapper"> <!-- wrapper div starts -->
+        <div class="scroll-bg">
+            <div class="menuSpace"></div>
+
+            <h1>SpecIFicator Download</h1>
+            
+            <h2>Frontend</h2>
+
+            <h3>Aktueller Arbeitsstand</h3>
+
+            <p>Den aktuellen Stand der Entwicklung des SpecIFicator Framewok und des SpecIFicator Default Plug-in können
+                Sie direkt als Ergebis des aktuellen Build-Standes herunterladen (<i>Frontend snapshot build</i>).</p>
+
+            <p style="text-align: center; font-size: 1.5Em;"><a href="https://github.com/oalt/SpecIFicator-dev/actions/workflows/frontend-publish-snapshot.yml"
+                    target="_blank"><i class="bi bi-github"></i> Download SpecIFicator Frontend Snapshot Build für Windows</a></p>
+
+            <p>Klicken Sie dazu auf den obersten erfolgreichen Build in der angezeigten Liste:<br />
+                <img src="../images/Github_Frontend_Snapshot.png" alt="Github frontend snapshot build list"
+                    width="50%" />
+            </p>
+            <p>Scrollen Sie nun auf der erscheinenden Seite nach unten. Sie finden unter 'Artifacts' zwei Dateien zum
+                Download. Beispielsweise:<br />
+            <img src="../images/Snapshot_Artifacts.png" alt="Github snapshot artifacts" width="50%"/>
+            </p>
+            <p>Laden Sie beide herunter. Die Daten sind aus technischen Gründen doppelt gepackt. Das heisst, dass Sie
+                sie auch doppelt entpacken müssen.</p>
+            <h4>Installation</h4>
+            <p>Entpacken Sie zunächst das SpecIFicator Framework aus der Datei
+                <strong>SpecIFicator_<i>&lt;Version&gt;</i></strong> an eine Stelle ihrer Wahl.</p>
+            <p>Entpacken Sie dann das SpecIFicator Standard-Plug-in aus der Datei
+                <strong>SpecIFicator.DefaultPlugin_<i>&lt;Version&gt;</i></strong> und kopieren Sie die
+                Inhalte, also den Ordner <i>SpecIFicator.DefaultPlugin</i> an folgende Stelle:</p>
+            <p>
+            <pre style="font-size: 1.5Em;">
+c:\Users\&lt;YourWindowsUserName&gt;\AppData\Local\SpecIFicator\plugins\
+                    </pre>
+            </p>
+
+            <p>Nun können Sie die Applikation durch starten des SpecIFicator Frameworks starten. Im ihrem
+                Framework-Ordner befindet sich eine Datei namens
+                <strong>SpecIFicator.exe</strong>
+            </p>
+            <p><u>Hinweis:</u> Da die Applikation aktuell nicht digital signiert wurde, erscheint beim ersten Start eine
+                Warnmeldung 'Unbekannter Herausgeber'.
+                Diese können Sie durch 'trotzdem ausführen' überschreiben.
+            </p>
+
+            <h3>Freigegebene Version</h3>
+            <p>Aktuell gibt es noch keine offiziell freigegebene Version des SpecIFicator Frontend. Bis dahin nutzen Sie bitten des aktuellen Arbeitsstand (s.o.).</p>
+
+        </div>
+
+        <div id="footerDiv">
+            <object type="text/html" data="footer.html" style="overflow:auto; width: 100%; height: 100%;" />
+        </div>
+
+    </div> <!-- wrapper div ends-->
+
+</body>
+
+</html>
