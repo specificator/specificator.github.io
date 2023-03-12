@@ -1,83 +1,187 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-    <link href="../css/site.css" rel="stylesheet" />
+  <title>SpecIFicator</title>
+  <link rel="icon" type="image/x-icon" href="../images/SpecIFicator_Icon.ico">
+  <link href="../css/site.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#" style="border-bottom: 0; margin: 0;"><img src="../images/specificator_logo.png" height="50px"></a></li>
-            <li><a href="#">Loslegen</a></li>
-            <li><a href="#">Frontend</a></li>
-            <li><a href="#">Backend</a></li>
-            <li><a href="#">Mehr Info...</a></li>
-            <li><a href="#" class="redText">Download</a></li>
-            
-        </ul>
-    </nav>
-    <div class="wrapper"> <!-- wrapper div starts -->
-  
-  <div class="fixed-bg bg-1">
-    <div class="pageMainHeader">SpecIFicator</div>
-    <h4>Eine Referenzimplementierung und Open-Source Framework für die Specification Integration Facility (SpecIF) in .NET</h4>
+  <div id="headerDiv">
+    <object type="text/html" data="header.html" style="overflow:auto; width: 100%; height: 100%;"></object>
   </div>
-  
-  <div class="scroll-bg">
-    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</h3>
-  </div>
-  
-  <div class="fixed-bg bg-2">
-    <h1 class="redText">Was ist SpecIF?</h1>
-  </div>
-  
+  <div class="wrapper"> <!-- wrapper div starts -->
+
+    <div class="fixed-bg bg-1">
+      <div class="pageMainHeader redText">SpecIFicator</div>
+      <h4>Eine Referenzimplementierung und Open-Source Framework für die Specification Integration Facility (SpecIF) in
+        .NET</h4>
+    </div>
+
+    <div class="scroll-bg">
+      <h3>SpecIFicator ist eine umfassende Referenzimplementierung für den praktischen Einsatz der Specification
+        Integration Facility (SpecIF).</h3>
+      <p>
+        Es besteht aus
+      <ul>
+        <li>
+          einem <strong>Frontend-Teil</strong>, der es ermöglicht SpecIF-Daten benutzerfreundlich anzuzeigen und zu
+          bearbeiten. Das Frontend ist dabei
+          modular aufgebaut und ermöglicht es Enwicklern durch ein Plugin-Konzept die Benutzeroberfläche durch
+          zusätzliche Plugins individuell an die
+          eigenen Bedürfnisse anzupassen. Ein ähnliches Konzept verfolgt beispielsweise auch die
+          Softwareentwicklungsumgebung Eclipse.
+        </li>
+        <li>
+          einem <strong>Frontend Standard-Plugin</strong> das eine grundlegende Benutzeroberfläche für die Bearbeitung
+          von SpecIF-Daten bzw. -Dateien
+          bereit stellt. Damit könnnen beispielsweise im Rahmen des Anforderungsmanagements Dokumente wie Lasten- oder
+          Pflichtenhefte mit
+          SpecIF erstellt, bearbeitet, betrachtet und zwischen Projektbeteiligten ausgetauscht werden.
+        </li>
+        <li>
+          einem <strong>Backend-Teil</strong>, der es ermöglicht SpecIF-Daten über ein Web-API bereit zu stellen.
+          Darüber hinaus implementiert das Backend
+          das standardisierte SpecIF Web-API.
+        </li>
+        <li>
+          verschiedenen <strong>Open-Source Bibliotheken</strong> - erstellt mit C#.NET - die den Zugriff und die
+          Handhabung von SpecIF-Daten ermöglichen
+          und erleichtern.
+        </li>
+      </ul>
+
+      </p>
+      <p>Alle SpecIFicator-Impelementierungen stehen als Open-Source auf GutHub unter MIT-Lizenz und können damit für
+        kommerzielle und nichtkommerzeielle
+        Zwecke genutzt werden.</p>
+    </div>
+
+    <div class="fixed-bg bg-2">
+      <h1 class="redText">Was ist SpecIF?</h1>
+
+    </div>
 
     <div class="grid-container">
-        <div class="grid-item">
-            <h3>Eine Initiative und Technologie definiert durch Mitglieder der Arbeitsgruppe PLM4MBSE der Gesellschaft für Systems Engineering (GfSE e.V.)</h3>
-        </div>
-        <div class="grid-item">
-            <h3>Ein Vokabular für standardisierte Begriffe im modellbasieren Systems Engineering (MBSE) und Product Lifecycle Managemnt (PLM), 
-                sowie eine Aussagenlogik <br />„Subjekt Prädikat Objekt“</h3>
-        </div>
-        <div class="grid-item">
-            <h3>Eine Weiterentwicklung des Requirement Interchange Format (ReqIF), also ein Datenformat</h3>
-        </div>
-        <div class="grid-item">
-            <h3>
-                Ein standardisiertes Web-API
-            </h3></div>
-        <div class="grid-item">
-            <h3>Eine semantische Integrationsebene</h3>
-        </div>
+      <div class="grid-item">
+        <h3>Eine Initiative und Technologie definiert durch Mitglieder der Arbeitsgruppe PLM4MBSE der Gesellschaft für
+          Systems Engineering (GfSE e.V.)</h3>
       </div>
+      <div class="grid-item">
+        <h3>Ein Vokabular für standardisierte Begriffe im modellbasieren Systems Engineering (MBSE) und Product
+          Lifecycle Managemnt (PLM),
+          sowie eine Aussagenlogik <br />„Subjekt Prädikat Objekt“</h3>
+      </div>
+      <div class="grid-item">
+        <h3>Eine Weiterentwicklung des Requirement Interchange Format (ReqIF), also ein Datenformat</h3>
+      </div>
+      <div class="grid-item">
+        <h3>
+          Ein standardisiertes Web-API
+        </h3>
+      </div>
+      <div class="grid-item">
+        <h3>Eine semantische Integrationsebene</h3>
+      </div>
+    </div>
 
-  
-  <div class="fixed-bg bg-3">
-    <h1>Das SpecIFicator Framework</h1>
-  </div>
+    <div class="scroll-bg">
+      <h3>Hatten Sie schon einmal das Problem, dass Sie Daten von einem Werkzeug nicht in ein anderes importieren
+        konnten ohne manuelle Nacharbeit?</h3>
+      <h3>Tauschen Sie ihre Anforderungsdokumente, Modelle und andere Spezifikation per Word, PDF oder Grafiken mit
+        Projektbeteiligten oder Zulieferern aus und erzeugen dadurch Medienbrüche?</h3>
 
-  <div class="scroll-bg">
-    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna.</h3>
-  </div>
+      <h3 class="redText">Genau hier setzt die SpecIF-Initiative an!</h3>
+      <p>SpecIF definiert und standardisiert ein Datenformat sowie ein Vokabular von standardisierten Begriffen mit dem
+        alle anfallenden Daten im Produktlebenszyklus abgebildet,
+        verlustfrei ausgetauscht und integriert werden können.
+      </p>
+      <p>Weitere Informationen zu SpecIf finden Sie <a href="MehrInfo.html">hier</a> und unter <a
+          href="https://specif.de" target="_blank">https://specif.de</a>.</p>
+    </div>
 
-  <div class="fixed-bg bg-3">
-    <h1>Das SpecIFicator Standard-Plugin</h1>
-  </div>
+    <div class="fixed-bg bg-3">
+      <h1 class="redText">Das SpecIFicator Framework</h1>
+    </div>
 
-  <div class="scroll-bg">
-    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna.</h3>
-  </div> 
+    <div class="scroll-bg">
+      <h3>Das SpecIFicator Framework ist eine Plattform für Frontend-Applikationen zur Arbeit mit SpecIF-Daten.</h3>
+      <img src="../images/Framework_Architecture.png" alt="SpecIFicator Framework architektur" width="50%" />
+      <p>Das Framework stellt die Basis für Frontent-Implementierungen bereit, die SpecIF-Daten anzeigen oder bearbeiten
+        können.
+        Die eigentlichen Editoren werden dabei als Plug-ins bereit gestellt und während des Startvorgangs durch das
+        Framewok geladen.</p>
+      <p>Dadurch ist es möglich mit Hilfe des SpecIFicator Frameworks sowohl open-source, als auch closed-source Plugins
+        zu kombinieren,
+        um beispielsweise spezielle unternehmensspezifische, mit SpecIF abgebildete Daten, auch unternehmensspezifisch
+        anzuzeigen.
+      </p>
+    </div>
 
-  <div class="fixed-bg bg-3">
-    <h1>Das SpecIFicator Backend</h1>
-  </div>
+    <div class="fixed-bg bg-4">
+      <h1 class="redText">Das SpecIFicator Standard-Plug-in</h1>
+    </div>
 
-  <div class="scroll-bg">
-    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna.</h3>
-  </div>
+    <div class="scroll-bg">
+      <h3>Das SpecIFicator Standard-Plugin ist eine quelloffene Referenzimplementierung eines Plug-ins für das
+        SpecIFicator Framework, das die Anzeige
+        und Bearbeitung von SpecIF-Daten aus unterschiedlichen Quellen erlaubt. Es dient als Basis des
+        SpecIFicator-Frontends für die Arebit mit SpecIF.</h3>
+        <p>
+          <img src="../images/SpecIFicator_DocumentView.PNG" width="75%" alt="SpecIFicator frontend, document view"/>
+        </p>
+      <p>Aktuell bietet das Standard-Plug-in folgenden Funktionsumfang:</p>
+      <ul>
+        <li>Aufbau von Verbindungen zu SpecIF-Daten aus folgenden Quellen:</li>
+        <ul>
+          <li>Dateien</li>
+          <li>MongoDB-Datenbank</li>
+          <li>Sparx Systems Enterprise Architect (UML-Modellierungsplattform)</li>
+          <li>SpecIF Web-API</li>
+        </ul>
+        <li>Ansicht von SpecIF-Hierarchien als Dokumente</li>
+        <li>Erstellen und Bearbeiten von Hierarchien, Ressourcen und Aussagen</li>
+        <li>Ansicht der Revisionen von Ressourcen mit Differenzansicht</li>
+        <li>Möglichkeit der Anzeige und Bearbeitung von Inhalten in mehreren Sprachen (<i>mulit-language</i>)</li>
+        <li>Möglichkeit der Navigation entlang der enthaltenen Aussagen (Navigation durch das semantische Netz,
+          <i>Statement-Browser</i>)
+        </li>
+        <li>Import und Export von SpecIF-Dateien in oder aus der aktuellen Datenquelle</li>
+        <li>Benutzerführung in Deutsch und Englisch.</li>
+      </ul>
+    </div>
 
-  <footer>
-    Footer text
-</footer>
-</div> <!-- wrapper div ends-->
+    <div class="fixed-bg bg-api">
+      <h1 class="redText">Das SpecIFicator Backend</h1>
+    </div>
+
+    <div class="scroll-bg">
+      <h3>Das SpecIFicator Backend implementiert das SpecIF Web-API mit Hilfe von ASP.NET.</h3>
+      <p>
+        Die Referenzimplementierung stellt neben der Umsetzung der in SpecIF 1.1 spezifizierten Endpunkte auch eine
+        OpenAPI/Swagger Oberfläche bereit und
+        ermöglicht das Hochladen von SpecIF-Daten über Dateien.
+      </p>
+      <h4>Docker-Container verfügbar</h4>
+      <img src="../images/docker_logo.png" alt="Docker logo" width="100px" />
+      <p>
+        Über einen Docker-Container kann das Backend gemeinsam mit einer MongoDB-Instanz einfach in einer
+        Docker-Umgebung eingesetzt werden, ohne dass eine
+        Installation des .NET-Frameworks oder ein Erstellen aus den Quelldateien notwendig wäre. Weitere Informationen
+        finden Sie
+        <a href="https://github.com/oalt/specif-mongodb-backend" target="_blank">hier</a>.
+      </p>
+    </div>
+
+    <div id="footerDiv">
+      <object type="text/html" data="footer.html" style="overflow:auto; width: 100%; height: 100%;" />
+    </div>
+
+
+  </div> <!-- wrapper div ends-->
 
 </body>
+
+</html>
