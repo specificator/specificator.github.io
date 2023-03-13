@@ -15,10 +15,90 @@
 
     <div class="wrapper"> <!-- wrapper div starts -->
         <div class="scroll-bg">
-            <div class="menuSpace"></div>
+            <div class="menuSpace">
 
+            </div>
 
-            Aktuell in Vorbereitung. Schauen Sie demnächst nochmal vorbei!
+            <div>
+                <h1>Loslegen</h1>
+            <p>Um mit SpecIF und dem SpecIFicator zu starten können Sie die folgenden Schritte durchführen:</p>
+            
+            <h2>1. Installieren Sie das SpecIFicator-Framework und das SpecIFicator Standard Plug-in</h2>
+            <p>
+                Informationen zum Download und zur Installation finden Sie unter <a href="download.html">Download</a>.
+            </p>
+
+            <h2>2. Erster Start</h2>
+
+            <p>Nach der Installation des Framework und des Plug-ins starten Sie die Anwendung durch Ausführung der Datei <i>SpecIFicator.exe</i> in ihrem 
+               Framework-Installationsordner.</p>
+            <p>Die Anwendung startet das erst mal und es erscheint die Startseite zum Verbinden einer SpecIF-Datenquelle. Sie haben nun die Möglichkeit
+               sich mit verschiedenen Datenquellen zu verbinden. Die einfachste Möglichkeit ist zunächst mit SpecIF-Dateien zu arbeiten. Flexibler ist 
+               allerdings die Nutzung eine MongoDB-Datenbank als Datenspeicher. Im Folgenden werden beide Möglichkeiten beschrieben.
+            </p>
+
+            <img src="../images/SpecIFicator_Connect.png" width="50%" />
+
+            <h3>2.1 Mit der SpecIF-Datenquelle verbinden</h3>
+            <h4>2.1.1 Nutzung der dateibasierten Datenspeicherung</h3>
+            <p>
+                Um die dateibasierte Datenverbindung zu nutzen, legen Sie zunächst einen leeren Ordner im Dateisystem an und kopieren sich den Pfad in die 
+                Zwischenablage (z.B. <i>C:\SpecIF\</i>).
+            </p>
+            <p>Nun führen Sie folgende Schritte aus, um den SpecIFicator das erste mal dateibasiert zu verbinden:
+                <ul>
+                    <li>Wählen Sie als Datenverbindungstyp 'Files' aus</li>
+                    <li>Tragen Sie in die Felder 'Datenpfad' sowie 'Metadatenpfad' den Pfad des Ordners ein, den Sie vorher angelegt haben (s.o.). 
+                        Zum Beispiel <i>C:\SpecIF\</i></li>
+                    <li>Klicken Sie auf die Schaltfläche 'Verbinden'</li>
+                </ul>
+                <img src="../images/SpecIFicator_ConnetcToFiles.png" width="400px" /><br/>
+                Sie Sind nun erfolgreich dateibasiert verbunden! 
+            </p>
+            </div>
+
+            <h4>2.1.2 Nutzung einer MongoDB-Datenbank</h3>
+            <p>
+                Zur Nutzung einer MongoDB installieren Sie sich zunächst eine MongoDB auf ihrem Rechner oder in einem Docker-Container und 
+                starten Sie die Datenbank.
+                Die MongoDB-Software können Sie <a href="https://www.mongodb.com/try/download/community" target="_blank">hier</a> herunterladen.</p>
+            <p>
+                Verbinden Sie sich mit der Datenbank auf folgende Weise:
+                <ul>
+                    <li>
+                        Wählen Sie als Datenverbindungstyp 'MongoDB' aus
+                    </li>
+                    <li>Tragen Sie als Datenbankadresse ihre Datenbankadresse ein (z.B. 'mongodb://127.0.0.1:27017')</li>
+                    <li>Klicken Sie auf die Schaltfläche 'Verbinden'</li>
+                </ul>
+                <img src="../images/SpecIFicator_ConnetcToMongoDB.png" width="400px" /><br/>
+                Sie Sind nun erfolgreich mit der MongoDB verbunden!
+            </p>
+
+            <h3>2.2 Metadaten importieren</h3>
+            
+            <p>
+                Beim ersten Start sind die Datenquellen noch komplett leer. Zur Arbeit mit SpecIF sind allerdings SpecIF-Metadaten zwingend erforderlich.
+                Solche Metadaten sind Teil der SpecIF-Freigaben, können aber auch durch eigene Metadatendefinitionen ergänzt werden.
+            </p>
+            <p>Der SpecIFicator bitetet die Möglichkeit über die GutHub-Plattform freigegebene Metadaten zu importieren und damit die Datenquellen zu
+               initialisieren - sofern eine Internetverbindung bereit steht. Um solche Metadaten zu importieren führen Sie bitte folgende Schritte durch:
+                <ul>
+                    <li>Kicken Sie im SpecIFicator auf <i>Metadaten</i><br/>
+                        <img src="../images/SpecIFcator_Metadataten.png" height="70px" />
+                    </li>
+                    <li>
+                        Wählen Sie unter 'Metadaten aus GitHub' die Metadaten aus, die Sie importieren wollen (z.B. <i>SpecIF 1.1 - Freigegeben</i>)
+                    </li>
+                    <li>Klicken Sie auf die obere 'Importieren' Schaltfläche.</li>
+                </ul>
+                <img src="../images/SpecIFicator_MetadatanImportieren.png" height="300px" />
+            </p>
+            <h3>2.3 Alles bereit...</h3>
+            <p>
+                Nun ist der SpecIFicator bereit für Dateneingaben. Klicken Sie auf 'Projekte', um neue Hierarchien anzulegen und mit der Erstellung von 
+                SpecIF-Daten zu beginnen!
+            </p>
 
         </div>
 
