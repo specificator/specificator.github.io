@@ -3,7 +3,8 @@
 
 <head>
     <title>SpecIFicator</title>
-    <meta name="description" content="SpecIFicator - A reference implementation and open source framework for the Specification Integration Facility (SpecIF) in .NET">
+    <meta name="description"
+        content="SpecIFicator - A reference implementation and open source framework for the Specification Integration Facility (SpecIF) in .NET">
     <meta name="keywords" content="SpecIFicator, SpecIF, Specification Integration Facility">
     <meta name="author" content="Dr. Oliver Alt">
     <link rel="icon" type="image/x-icon" href="../images/SpecIFicator_Icon.ico">
@@ -21,41 +22,96 @@
             <div class="menuSpace"></div>
 
             <h1>SpecIFicator Download</h1>
-            
+
             <h2>Frontend</h2>
 
-            <h3>Aktueller Arbeitsstand</h3>
+            <h3>Freigegebene Versionen</h3>
+            <p>Zum Betrieb des SpecIFicator benötigen Sie die Framework-Applikation
+                und das SpecIFicator.DefaultPlugin. Diese müssen getrennt heruntergeladen werden.
+                Die Tabelle unten listet die freigegebenen Versionen auf und zeigt welche Plug-In-Version zu
+                welcher Framework-Applikation passt (gleiche Tabellenzeile).</p>
+            <p><u>Wichtig:</u> Sie benötigen immer die Fraemwork-Applikation <u>und</u> ein
+                oder mehrere Plug-Ins für eine erfolgreiche Intstallation des SpecIFicator!</p>
 
-            <p>Den aktuellen Stand der Entwicklung des SpecIFicator Framewok und des SpecIFicator Default Plug-in können
-                Sie direkt als Ergebis des aktuellen Build-Standes herunterladen (<i>Frontend snapshot build</i>).</p>
+            <p>Hinweise zur Installation nach dem Download finden sich im Abschnitt <a
+                    href="#installation">Installation</a>.</p>
+            <table width="100%" border="1">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            SpecIFicator Framework Applikation (Windows x86)
+                        </th>
 
-            <p style="text-align: center; font-size: 1.5Em;"><a href="https://github.com/oalt/SpecIFicator-dev/actions/workflows/frontend-publish-snapshot.yml"
-                    target="_blank"><i class="bi bi-github"></i> Download SpecIFicator Frontend Snapshot Build für Windows</a></p>
+                        <th colspan="4">
+                            Passende Plug-In-Freigaben
+                        </th>
+                        <th>
+                            basierend auf...
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
 
-            <p>Klicken Sie dazu auf den obersten erfolgreichen Build in der angezeigten Liste:<br />
-                <img src="../images/Github_Frontend_Snapshot.png" alt="Github frontend snapshot build list"
-                    width="50%" />
-            </p>
-            <p>Scrollen Sie nun auf der erscheinenden Seite nach unten. Sie finden unter 'Artifacts' zwei Dateien zum
-                Download. Beispielsweise:<br />
-            <img src="../images/Snapshot_Artifacts.png" alt="Github snapshot artifacts" width="50%"/>
-            </p>
-            <p>Laden Sie beide herunter. Die Daten sind aus technischen Gründen doppelt gepackt. Das heisst, dass Sie
-                sie auch doppelt entpacken müssen.</p>
-            <h4>Installation</h4>
+
+                    <tr>
+
+                        <td class="badge">
+                            <img src="https://img.shields.io/badge/SpecIFicator-2.0.0.15-green" />
+                        </td>
+                        <td>15.5.2023</td>
+                        <td>
+                            <a
+                                href="https://github.com/specificator/SpecIFicator.Apps.BlazorWpf/releases/download/release%2F2.0.0.15/SpecIFicator_2.0.0.15.zip">
+                                [Download]
+                            </a>
+                        </td>
+                        <td>
+                            <a
+                                href="https://github.com/specificator/SpecIFicator.Apps.BlazorWpf/releases/tag/release%2F2.0.0.15">
+                                [Info]
+                            </a>
+                        </td>
+
+                        <td class="badge">
+                            <img src="https://img.shields.io/badge/SpecIFicator.DefaultPlugin-2.0.0.15-red" />
+                        </td>
+                        <td>15.5.2023</td>
+                        <td>
+                            <a
+                                href="https://github.com/specificator/SpecIFicator.DefaultPlugin/releases/download/release%2F2.0.0.15/SpecIFicator.DefaultPlugin_2.0.0.15.zip">[Download]</a>
+                        </td>
+                        <td>
+                            <a
+                                href="https://github.com/specificator/SpecIFicator.DefaultPlugin/releases/tag/release%2F2.0.0.15">[Info]</a>
+                        </td>
+
+                        <td class="badge"><img
+                                src="https://img.shields.io/badge/SpecIFicator.Framework-2.2.0.7-blueviolet" /></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+            
+<a id="installation"></a>
+            <h3>Installation</h3>
+            
+
             <p>Entpacken Sie zunächst das SpecIFicator Framework aus der Datei
-                <strong>SpecIFicator_<i>&lt;Version&gt;</i></strong> an eine Stelle ihrer Wahl.</p>
+                <strong>SpecIFicator_<i>&lt;Version&gt;</i></strong> an eine Stelle ihrer Wahl.
+            </p>
             <p>Entpacken Sie dann das SpecIFicator Standard-Plug-in aus der Datei
                 <strong>SpecIFicator.DefaultPlugin_<i>&lt;Version&gt;</i></strong> und kopieren Sie die
-                Inhalte, also den Ordner <i>SpecIFicator.DefaultPlugin</i> an folgende Stelle:</p>
+                Inhalte, also den Ordner <i>SpecIFicator.DefaultPlugin</i> an folgende Stelle:
+            </p>
             <p>
             <pre style="font-size: 1.5Em;">
-c:\Users\&lt;YourWindowsUserName&gt;\AppData\Local\SpecIFicator\plugins\
-                    </pre>
+c:\Users\&lt;YourWindowsUserName&gt;\AppData\Local\SpecIFicator\plugins\</pre>
             </p>
 
-            <p>Nun können Sie die Applikation durch starten des SpecIFicator Frameworks starten. Im ihrem
-                Framework-Ordner befindet sich eine Datei namens
+            <p>Nun können Sie die Applikation durch Starten des SpecIFicator Frameworks starten. In ihrem
+                Framework-Ordner befindet sich eine ausführbare Datei namens
                 <strong>SpecIFicator.exe</strong>
             </p>
             <p><u>Hinweis:</u> Da die Applikation aktuell nicht digital signiert wurde, erscheint beim ersten Start eine
@@ -63,9 +119,32 @@ c:\Users\&lt;YourWindowsUserName&gt;\AppData\Local\SpecIFicator\plugins\
                 Diese können Sie durch 'trotzdem ausführen' überschreiben.
             </p>
 
-            <h3>Freigegebene Version</h3>
-            <p>Aktuell gibt es noch keine offiziell freigegebene Version des SpecIFicator Frontend. Bis dahin nutzen Sie bitten des aktuellen Arbeitsstand (s.o.).</p>
+<h3>Aktueller Arbeitsstand aus der Entwicklung</h3>
 
+<div class="warning">
+    <strong>Achtung!</strong> Aktuelle Arbeitsstände können möglicherweise fehlerhafte oder unvollständige
+    Funktionalitäten enthalten.
+    Nutzen Sie für produktive Umgebungen besser die oben aufgelisteten freigegebenen Versionen.
+</div>
+
+
+<p>Den aktuellen Stand der Entwicklung des SpecIFicator Framewok und des SpecIFicator Default Plug-in können
+    Sie direkt als Ergebis des aktuellen Build-Standes herunterladen (<i>Frontend snapshot build</i>).</p>
+
+<p style="text-align: center; font-size: 1.5Em;"><a
+        href="https://github.com/oalt/SpecIFicator-dev/actions/workflows/frontend-publish-snapshot.yml"
+        target="_blank"><i class="bi bi-github"></i> Download SpecIFicator Frontend Snapshot Build für
+        Windows</a></p>
+
+<p>Klicken Sie dazu auf den obersten erfolgreichen Build in der angezeigten Liste:<br />
+    <img src="../images/Github_Frontend_Snapshot.png" alt="Github frontend snapshot build list" width="50%" />
+</p>
+<p>Scrollen Sie nun auf der erscheinenden Seite nach unten. Sie finden unter 'Artifacts' zwei Dateien zum
+    Download. Beispielsweise:<br />
+    <img src="../images/Snapshot_Artifacts.png" alt="Github snapshot artifacts" width="50%" />
+</p>
+<p>Laden Sie beide herunter. Die Daten sind aus technischen Gründen doppelt gepackt. Das heisst, dass Sie
+    sie auch doppelt entpacken müssen.</p>
         </div>
 
         <div id="footerDiv">
